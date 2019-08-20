@@ -1,0 +1,53 @@
+html {
+    font-size: 16px;
+}
+
+
+body {
+    background-color: #fead93;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul li a{
+    text-decoration: none;
+    text-align: left;
+}
+
+header {
+padding: 2%;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+    body:after {
+        content: "general kenobi";
+    }
+}
+
+@media (min-width: 900px) {
+body:after {
+content: "hello there";
+}
+}
