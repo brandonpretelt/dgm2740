@@ -34,6 +34,7 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #000;
+    background-color: hsla(15, 90%, 60%);
     text-align: center;
     padding: 8%;
     font-size: 1.5rem;
