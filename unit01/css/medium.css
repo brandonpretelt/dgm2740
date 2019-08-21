@@ -1,0 +1,12 @@
+@media (min-width: 45.06em) {
+    h2:after {
+        content: " Tablet size ";
+    }
+    .medium-img {
+        display: block;
+    }
+    .large-img,
+    .small-img {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+@media (min-width: 75em) {
+    ul {
+        display: block;
+    }
+
+    ul li {
+        float: left;
+    }
+
+    header,
+    .headerWrapper,
+    nav,
+    .navWrapper,
+    footer,
+    .footerWrapper,
+    main {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    .navWrapper {
+        padding: 0;
+    }
+
+    h2:after {
+        content: " Desktop size ";
+    }
+    .large-img {
+        display: block;
+        margin: 2rem;
+        width: 50%;
+    }
+    .small-img,
+    .medium-img {
+        display: none;
+    }
+}
