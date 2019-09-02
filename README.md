@@ -9,7 +9,7 @@ a) a basic responsive design
 b) that my domain is setup correctly.
 https://dgm2740.brandonpretelt.com/ToolsAndDomain/
 
-## Assignment 2
+## Assignment 2: Science Museum
 https://dgm2740.brandonpretelt.com/Science_Museum/
 
 This assignment covers the following: 
@@ -21,6 +21,8 @@ This assignment covers the following:
     Demonstrate SCSS Variables
     Practice design skills
 (these objectives are found here on my instructor's course page: http://www.drpaulcheney.com/dgm2740/unit02.php)
+
+## Assignment 3: Fruit Stand
 
 
 
