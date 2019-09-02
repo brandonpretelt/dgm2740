@@ -1,0 +1,64 @@
+.headerWrapper {
+    background-color: #f5f7f0;
+    margin: 0 auto;
+    // max-width: 60rem;
+}
+
+// ---
+main,
+header,
+.logo,
+nav {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+header {
+    transform: translateX(-200px);
+}
+
+// header {
+//     display: flex;
+//     align-items: center;
+//     padding: 0;
+// }
+
+.logo {
+    display: block;
+    float: left;
+    padding: $gutter;
+}
+
+.navWrapper {
+    background-color: darken($primary-color, 20%);
+}
+// Designinspiration
+nav {
+    max-width: 60rem;
+    margin: 0 auto;
+
+    ul li {
+        width: auto;
+    }
+
+    ul li:last-child {
+        border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+    }
+
+    ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    ul li:first-child {
+        border-left: solid 1px rgba(0, 0, 0, 0.3);
+    }
+
+    ul li:last-child {
+        border-right: solid 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+// ----
+.p-hero {
+    width: 33%;
+}

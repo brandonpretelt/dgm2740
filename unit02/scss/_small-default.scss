@@ -1,0 +1,166 @@
+// Fixes  ------------------------------------------------------------
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// MAIN STYLES -------------------------------------------------------------------
+body {
+    /* background-color: $primary-color;*/
+    background-color: #f5f7f0;
+}
+section h2 {
+    font-size: $second-heading-size;
+}
+
+main {
+    img {
+        width: 100%;
+    }
+}
+
+section {
+    h2 {
+        font-family: $main-heading-font;
+        font-weight: $normal-weight;
+        padding: $gutter;
+    }
+    p {
+        padding: $gutter;
+        font-size: $copy-font-size;
+        line-height: 1.5;
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+// NAV STYLES -------------------------------------------------------------------
+.navWrapper,
+nav {
+    background-color: darken($primary-color, 20%);
+}
+nav {
+    // background-color: darken($primary-color, 20%);
+    margin: $gutter;
+}
+ul li {
+    float: left;
+    width: 25%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+ul li:last-child {
+    border-right: none !important;
+}
+
+ul li.active a {
+    background-color: darken($primary-color, 10%);
+}
+
+ul li a:hover {
+    color: #eaeaea;
+    background-color: darken($primary-color, 10%);
+}
+
+ul li a {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    /*font-weight: $boldWeight;*/
+    padding: 1.5rem 0;
+    color: #eaeaea;
+    text-decoration: none;
+    transition: background 0.75s ease, color 0.75s ease;
+}
+
+ul li.active a {
+    background-color: darken($primary-color, 10%);
+}
+
+ul li a:hover {
+    color: #eaeaea;
+    background-color: darken($primary-color, 10%);
+}
+
+// Header Styles -------
+
+.logo {
+    display: block;
+    float: left;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+header {
+    margin: 0 auto;
+    background-color: #f5f7f0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    h1 {
+        font-size: $main-heading-size;
+        font-family: $main-heading-font;
+        font-weight: $bold;
+        line-height: 1.5;
+    }
+    .slogan {
+        display: none !important;
+    }
+    .float-right {
+        float: right;
+        padding: $gutter * 2;
+    }
+}
+
+.headerWrapper {
+    max-width: 100%;
+    background-color: #f5f7f0;
+    display: flex;
+    align-items: center;
+    h2 {
+        margin-top: 20px;
+        display: block;
+        font-family: "Life Savers", sans-serif;
+        font-weight: $normal-weight;
+        padding-bottom: $gutter * 2;
+    }
+}
+// ---
+
+body,
+main {
+    background-color: darken(#f5f7f0, 15%);
+}
+
+.hero img,
+.p-hero img {
+    display: block;
+    max-width: 100%;
+}
+
+// ----
+
+footer {
+    background-color: darken($primary-color, 20%);
+    p {
+        text-align: center;
+        padding: 0.75rem $gutter;
+        color: #efefef;
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+// Clearfix -------------------------------------------------------------------
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
