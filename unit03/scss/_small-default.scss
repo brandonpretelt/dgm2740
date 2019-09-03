@@ -1,0 +1,126 @@
+/*** Default styling ------------------------------------------------------------------- ***/
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*** Clearfix ------------------------------------------------------------------- ***/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*** Body ------------------------------------------------------------------- ***/
+
+body {
+    background-color: #fff;
+    font-family: $fontFamily;
+    font-weight: 300;
+}
+
+/*** Header ------------------------------------------------------------------- ***/
+
+header {
+    max-width: 71.25rem;
+    background-color: $bodyColor;
+
+    h1,
+    h2 {
+        padding: $gutter;
+        text-align: center;
+        font-weight: $lightWeight;
+    }
+
+    h1 {
+        font-size: $mainHeading;
+    }
+
+    h2 {
+        font-size: $subHeading;
+    }
+}
+
+/*** Navigation ------------------------------------------------------------------- ***/
+
+nav {
+    background-color: $primaryColor;
+
+    ul li {
+        float: left;
+        width: 25%;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    ul li a {
+        text-align: center;
+        padding: 0.5rem 1rem;
+        display: block;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: $fontColor;
+        transition: background 0.75s ease, color 0.75s ease;
+    }
+
+    ul li.active a {
+        background-color: darken($primaryColor, 10%);
+    }
+
+    ul li a:hover {
+        color: #eaeaea;
+        background-color: darken($primaryColor, 10%);
+    }
+}
+
+/*** Main ------------------------------------------------------------------- ***/
+
+main {
+    background-color: lighten($secondaryColor, 5%);
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .photo figcaption {
+        color: $fontColor;
+        font-family: $bodyFontFamily;
+        padding: $gutter * 2;
+        margin: $gutter;
+        font-size: 1.3rem;
+    }
+
+    .photo {
+        // margin: 0 auto;
+        width: 50%;
+        /*float: left;*/
+        padding: $gutter * 2;
+    }
+
+    .photo img {
+        max-width: 100%;
+    }
+
+    .articleHeading {
+        padding: $gutter;
+        font-size: 1.5rem;
+        color: $fontColor;
+    }
+}
+
+/*** Footer ------------------------------------------------------------------- ***/
+
+footer {
+    background-color: $primaryColor;
+    p {
+        color: $fontColor;
+        text-align: center;
+        padding: $gutter;
+    }
+}
