@@ -1,0 +1,25 @@
+.animation {
+    width: 30%;
+    animation: $anim-name 2.5s ease-in-out;
+    transform: translateX(0);
+    opacity: 1;
+    img {
+        max-width: 100%;
+    }
+}
+
+article:nth-child(2) .animation {
+    animation: $anim-name 2s ease-in-out;
+}
+
+@keyframes #{$anim-name} {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

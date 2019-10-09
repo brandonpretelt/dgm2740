@@ -1,0 +1,56 @@
+/*** Header ------------------------------------------------------------------- ***/
+.headerWrapper {
+    background-image: url("../images/yellowstone-2.png"),
+        url("../images/yellowstone-repeat.gif");
+    background-repeat: no-repeat, repeat-x;
+    /*background-position: 50% 20%, 0%;*/
+    background-position: top, center;
+    background-size: cover;
+    border-bottom: solid black 1px;
+}
+
+header {
+    background-position: center;
+    background-origin: content-box;
+    margin: 0 auto;
+}
+
+/*** Nav----------------------------------------------------------------------- ***/
+.navWrapper {
+    background-color: $primaryColor;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav {
+    max-width: 60rem;
+    margin: 0 auto;
+    background-color: $primaryColor;
+    /*ul{}*/
+    ul li {
+        width: auto;
+        border-bottom: none;
+    }
+    ul li:first-child {
+        border-left: solid 1px rgba(0, 0, 0, 0.3);
+    }
+
+    ul li:last-child {
+        border-right: solid 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*** Main---------------------------------------------------------------------- ***/
+section {
+    h1 {
+        font-size: $mainHeading + 3rem;
+    }
+    article {
+        padding: 0 $gutter;
+    }
+    .sectionHeading {
+        padding: 0 $gutter;
+    }
+}
+
+.animation {
+    width: 15%;
+}

@@ -1,0 +1,44 @@
+{
+    "folders": [
+        {
+            "name": "unit05",
+            "path": "unit05"
+        },
+        {
+            "name": "unit04",
+            "path": "unit04"
+        },
+        {
+            "name": "unit08",
+            "path": "unit08"
+        },
+        {
+            "name": "unit03",
+            "path": "unit03"
+        },
+        {
+            "name": "unit02",
+            "path": "unit02"
+        },
+        {
+            "name": "unit01",
+            "path": "unit01"
+        },
+        {
+            "name": "css-grid",
+            "path": "/Users/brandonpretelt/Documents/Projects/css-grid"
+        },
+        {
+            "name": "brandonpreteltwebsite",
+            "path": "/Users/brandonpretelt/Documents/Projects/brandonpreteltwebsite"
+        },
+        {
+            "name": "unit09",
+            "path": "unit09"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "unit05",
+        "liveServer.settings.port": 5501
+    }
+}

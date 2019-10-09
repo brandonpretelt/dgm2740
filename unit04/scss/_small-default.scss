@@ -1,0 +1,144 @@
+// Default styling ------------------------------------------------------------
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+/*** Header ------------------------------------------------------------------- ***/
+
+.headerWrapper {
+    /*background-color: $primaryColor;*/
+    border-bottom: solid 1px black;
+    background-image: url("../images/yellowstone-small.png");
+    /*background-image: url("../images/car2.png");*/
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover7;
+}
+
+header {
+    /*max-width: 60rem;*/
+    /*background: url('../images/yellowstone.jpg')*/
+    max-width: 60rem;
+
+    h1,
+    h2 {
+        padding: $gutter;
+        text-align: left;
+        font-weight: $lightWeight;
+        font-family: $fontFamilyHeading;
+        color: #fff; /*#f9f9f9;*/
+        text-shadow: #000 1px 0 10px;
+    }
+
+    h1 {
+        font-size: $mainHeading;
+    }
+
+    h2 {
+        font-size: $subHeading;
+    }
+}
+
+/*** Navigation ---------------------------------------------------------------- ***/
+
+nav {
+    background-color: $primaryColor;
+    font-family: $fontFamilyHeading;
+
+    ul li {
+        float: left;
+        width: 25%;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    ul li a {
+        text-align: center;
+        padding: 0.5rem 1rem;
+        display: block;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: $fontColor;
+        transition: background 0.75s ease, color 0.75s ease;
+    }
+
+    ul li.active a {
+        background-color: darken($primaryColor, 10%);
+    }
+
+    ul li a:hover {
+        color: #eaeaea;
+        background-color: darken($primaryColor, 10%);
+    }
+}
+/*** Main ---------------------------------------------------------------------- ***/
+main {
+    background-color: #fcfcfc;
+}
+section {
+    font-family: $fontFamily;
+
+    .sectionHeading {
+        font-size: 1.425rem;
+    }
+    padding: $gutter * 2;
+    article {
+        h2 {
+            font-size: 1.25rem;
+            margin: ($gutter * 2) 0;
+        }
+
+        /* background-color: #efefef; */
+        padding: $gutter;
+        margin: $gutter;
+        border-radius: 20px;
+
+        p {
+            line-height: 150%;
+            padding: $gutter;
+        }
+        padding: $gutter;
+    }
+
+    /*article:nth-child(even) {
+            background-color: $primaryColor;
+            color: #fff;
+        }*/
+}
+
+/*** Footer ------------------------------------------------------------------- ***/
+footer {
+    background-color: $primaryColor;
+    p {
+        color: $fontColor;
+        text-align: center;
+        padding: $gutter;
+        font-family: $fontFamily;
+    }
+
+    a {
+        text-decoration: none;
+        color: lighten($secondaryColor, 10%);
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+}
+// Clearfix -------------------------------------------------------------------
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,168 @@
+// Default styling ------------------------------------------------------------
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontFamily;
+    background-color: #eaeaea;
+    margin: 0 auto;
+}
+
+// Clearfix -------------------------------------------------------------------
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+// Header ---------------------------------------------------------------------
+header {
+    max-width: 100%;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+
+    h1,
+    h2 {
+        margin: $gutter;
+        padding: $gutter;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: $heading2;
+    }
+}
+
+// Nav ------------------------------------------------------------------------
+
+.hamburger {
+    display: block;
+    width: 7rem;
+    height: 2.75rem;
+    background-repeat: no-repeat;
+    background-position: 2vw center;
+}
+
+.hamburgerOpen {
+    @extend .hamburger;
+    background-image: url(../images/menuOpenWhite.png);
+}
+
+.hamburgerClose {
+    @extend .hamburger;
+    background-image: url(../images/menuCloseWhite.png);
+}
+
+.smallNavBar {
+    background-color: $menuColor;
+}
+
+nav {
+    height: 100vh;
+    width: 100%;
+    background-color: $menuColor;
+    max-width: 64rem;
+    ul li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        padding: 0.6rem 2%;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    }
+    ul li ul li a {
+        padding-left: 8%;
+    }
+    ul li.active a {
+        background-color: $menuColor;
+    }
+}
+
+// Main -----------------------------------------------------------------------
+main {
+    max-width: 64rem;
+
+    .myslider div {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .coolTrick {
+        display: block;
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        @extend .addMarginBottom;
+    }
+
+    .coolTrick:hover .coverColor {
+        opacity: 0.1;
+    }
+
+    .addMarginBottom {
+        margin-bottom: $gutter;
+    }
+
+    .icon {
+        position: absolute;
+        top: 100px;
+        right: 2px;
+        width: 100%;
+        text-align: center;
+    }
+    .text {
+        position: absolute;
+        top: 215px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .photograph {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .coverColor {
+        background-color: $primaryColor;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.5s;
+    }
+
+    section h2 {
+        font-size: $heading2;
+    }
+}
+// Footer ---------------------------------------------------------------------
+footer {
+    clear: both;
+    text-align: center;
+    background-color: $primaryColor;
+    p {
+        color: #fff;
+        padding: 0.5rem $gutter;
+    }
+    a {
+        color: #fff;
+    }
+}

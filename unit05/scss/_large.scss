@@ -1,0 +1,46 @@
+main,
+nav,
+header,
+.heroImage {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+main {
+    background-color: darken($primaryColor, 20%);
+}
+
+figure.founderImg {
+    padding: $gutter;
+}
+
+.heroImage {
+    padding: 0;
+    max-width: 100%;
+}
+
+nav {
+    ul li {
+        width: auto;
+    }
+    ul a {
+        padding: 0.5rem 1rem;
+    }
+    ul li:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    ul li:last-child {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}
+
+footer {
+    border-top: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .large-#{$i} {
+        flex-basis: $w;
+    }
+}

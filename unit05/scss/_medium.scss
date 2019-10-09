@@ -1,0 +1,20 @@
+.slogan {
+    display: block !important;
+}
+
+figure.heroImage,
+img {
+    padding: 0;
+    max-width: 100%;
+}
+
+figure.founderImg {
+    padding: $gutter;
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .medium-#{$i} {
+        flex-basis: $w;
+    }
+}
