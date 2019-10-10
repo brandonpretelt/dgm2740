@@ -7,9 +7,9 @@ img {
     padding: 0;
     max-width: 100%;
 }
-
 figure.founderImg {
-    padding: $gutter;
+    width: 450px !important;
+    float: right;
 }
 
 @for $i from 1 through 12 {

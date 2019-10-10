@@ -131,13 +131,15 @@ main {
         .heroImg {
             margin: 0 auto;
         }
-        figure.founderImg {
-            padding: $gutter;
-        }
         .founderImg {
-            max-width: 100%;
+            margin: 0 auto;
+            padding: $gutter;
+            display: block;
             width: 300px;
-            float: right;
+        }
+
+        .founderImg img {
+            max-width: 100%;
         }
     }
 }
