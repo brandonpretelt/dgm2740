@@ -1,0 +1,226 @@
+// Default styling ------------------------------------------------------------
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mainFontFamily, sans-serif;
+}
+
+header,
+nav,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+// Clearfix -------------------------------------------------------------------
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// Header ---------------------------------------------------------------------
+.navWrapper {
+    background-color: $secondaryColor;
+}
+header {
+    .logo {
+        padding: $gutter;
+        float: left;
+    }
+    display: flex;
+
+    text-align: center;
+    h1,
+    h2 {
+        padding: 2%;
+    }
+
+    h1,
+    h2 {
+        align-self: center;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        display: none;
+    }
+}
+
+// Nav ------------------------------------------------------------------------
+@mixin transparentBorderBG {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    width: 100%;
+
+    ul li {
+        text-align: center;
+        float: left;
+        width: 100%;
+    }
+
+    ul li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: $gutter * 3;
+        border-bottom: solid 1px white;
+    }
+    ul li a:first-child {
+        border-top: solid 1px white;
+    }
+    ul li ul li a {
+        /*padding-left: $gutter * 3;*/
+        padding: $gutter * 3;
+        border-top: solid 1px white;
+    }
+    ul li ul li a:last-child {
+        border-bottom: solid 1px white;
+    }
+
+    button {
+        @include transparentBorderBG();
+        /*background-image: url(../images/menuIconWhite.png);
+        background-repeat: no-repeat;*/
+        font-size: 2rem;
+        /*width: 72px;
+        height: 32px;*/
+        color: #fff;
+        padding: $gutter;
+        background-color: rgba(0, 0, 0, 0.1);
+        /*background-size: 86%;
+        background-position: center center;*/
+        border-radius: 10px;
+        margin: 6px 0 6px 2%;
+        cursor: pointer;
+    }
+    .closed {
+        display: none;
+    }
+}
+
+// Main -----------------------------------------------------------------------
+.thanks {
+    max-width: 64rem;
+    color: #fff;
+    h1,
+    p {
+        padding: $gutter;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.mainWrapper {
+    background-color: darken($secondaryColor, 50%);
+}
+
+main {
+    max-width: 64rem;
+    padding: $gutter;
+
+    h2 {
+        color: #fff;
+        padding: $gutter * 2;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    form {
+        border-radius: 10px;
+        background-color: white;
+
+        padding: $gutter;
+        fieldset {
+            margin: 2rem 1rem;
+            border: 1px solid #445ba9;
+            border-radius: 10px;
+            padding: 0.5rem 2%;
+        }
+
+        .materials input:first-child {
+            margin-bottom: 20px;
+        }
+
+        legend {
+            color: #445ba9;
+            margin: 0 1rem;
+            padding: 0 0.5rem;
+        }
+
+        .top,
+        div {
+            display: block;
+            padding: 1rem 0;
+            color: #9c2c13;
+            font-size: 0.8rem;
+        }
+
+        .top input,
+        .top select {
+            display: block;
+            font-size: 1rem;
+            border: solid 1px #999;
+            border-radius: 4px;
+            padding: 0.75rem;
+            color: #555;
+            width: 100%;
+            max-width: 20rem;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .submitBtn {
+            border: none;
+            background-color: darken($secondaryColor, 20%);
+            color: #fff;
+            border-radius: 1rem;
+            padding: 0.75rem 1.5rem;
+            margin: 0 0 2rem 2%;
+            width: 96%;
+            /*max-width: 20rem;*/
+        }
+
+        .top input:required {
+            border-left: red solid 6px;
+        }
+        .top input:required:valid {
+            border-left: green solid 6px;
+        }
+
+        .required {
+            color: red;
+        }
+    }
+
+    .form-radio,
+    .sbs {
+        display: block;
+        color: #555;
+        padding: 0.75rem 0;
+    }
+}
+.footerWrapper {
+    background-color: $secondaryColor;
+}
+footer {
+    padding: $gutter;
+    text-align: center;
+    color: #fff;
+}

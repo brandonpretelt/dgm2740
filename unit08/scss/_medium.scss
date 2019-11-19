@@ -1,48 +1,129 @@
-/*** Header ------------------------------------------------------------------- ***/
-
-/*** Main---------------------------------------------------------------------- ***/
-/*** Footer ---------------------------------------------------------------------- ***/
-
-footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-
-    h3 {
-        font-size: 1.2rem;
-    }
+/* Nav ------------------------------------------------------------------------ */
+nav {
     ul li {
-        list-style: none;
-    }
-    ul li a {
-        text-decoration: none;
-    }
-    .shows-section,
-    .personalities-section {
-        display: block;
-        padding: 2%;
-    }
-    .main-section,
-    .shows-section,
-    .tools-section,
-    .personalities-section {
         width: 25%;
-    }
-    .main-section,
-    .shows-section {
-        grid-column: 1 / 3;
-    }
-    .tools-section,
-    .personalities-section {
-        grid-column: 3 / 5;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
 }
 
-.footer-info {
-    display: grid;
+nav ul.closed {
+    display: block;
+}
 
-    grid-column: 1 / 5;
-    grid-row: 5 / 4;
-    justify-items: center;
+.menu-btn {
+    display: none;
+}
+/* Main ----------------------------------------------------------------------- */
+section {
+    padding: $gutter;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    .leading-story {
+        justify-self: center;
+        grid-column: 1 / span 3;
+    }
+    .story {
+        img {
+            height: 300px;
+            width: 550px;
+        }
+    }
+    /*.story {
+        max-width: 100%;
+        img {
+            width: 580px;
+            height: 300px;
+        }
+    }*/
+}
+
+/* *** Column Layout *** */
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 50%;
+    .medium-#{$i} {
+        flex-basis: $w;
+        /*width: $w;
+        float: left;*/
+    }
+}
+.column button {
+    margin: $gutter 0;
+    padding: $gutter * 2;
+}
+
+.btn > button {
+    width: 100%;
+}
+
+.tip-of-day,
+.faq {
+    display: block !important;
+    background-color: $secondaryColor;
+    color: #fff;
+    padding: $gutter;
+    margin: $gutter ($gutter * 1);
+}
+
+.faq {
+    background: none;
+    color: #000;
+}
+footer {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    .copyright-info {
+        margin-top: 5px;
+        justify-self: center;
+        grid-row: 4;
+        grid-column: 2;
+        grid-column: 2 / span 3;
+    }
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        justify-self: center;
+    }
+    .section1,
+    .section2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .section2 {
+        grid-row: 3;
+    }
+    .section3,
+    .section4 {
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .section4 {
+        grid-row: 3;
+    }
+
+    .section3 h2,
+    .section4 h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .section3 a,
+    .section4 a {
+        text-decoration: none;
+        color: #ddd;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .section3 li,
+    .section4 li {
+        padding: 0.35rem;
+    }
+    .section3,
+    .section4 {
+        padding: $gutter;
+        display: block;
+    }
 }

@@ -1,7 +1,27 @@
-$menuColor: #333;
-$gutter: 2%;
-$fontFamily: "Roboto Condensed", sans-serif;
-$heading2: 1.7rem;
-$primaryColor: #113080;
+$mainHeading: 2rem;
+$subHeading: 1.7rem;
 
-// #333 start, #ddd end
+$gutter: 2%;
+$primaryColor: darken(#3aa4ff, 40%); /*#FFFEDB*/
+$secondaryColor: #3aa4ff;
+
+$mainFontFamily: "Josefin Sans", sans-serif;
+
+@mixin gradient($startColor, $endColor) {
+    background: #333333; /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        $startColor 0%,
+        $endColor 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        top,
+        $startColor 0%,
+        $endColor 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        $startColor 0%,
+        $endColor 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

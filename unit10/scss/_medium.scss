@@ -1,0 +1,135 @@
+// Header --------------------------
+header {
+    h2 {
+        font-size: 1.5rem;
+        display: block;
+    }
+}
+// Nav ------------------------------------------------------------------------
+nav {
+    .closed {
+        display: block;
+    }
+    /*position: relative;*/
+    button {
+        display: none;
+    }
+    ul {
+        // margin: 0 0 0 2vw;
+        padding: 2%;
+        float: left;
+        border-top: none;
+    }
+    ul li ul li {
+        border-top: none;
+    }
+    ul li {
+        float: left;
+        width: auto;
+        border-top: none;
+        list-style: none;
+        border-left: solid 1px green;
+    }
+
+    ul li a {
+        font-size: 0.9em;
+        padding: 0.5rem 1rem;
+        border-bottom: none;
+        border-top: none;
+        transition: background 0.3s linear;
+    }
+    ul li a:first-child {
+        border-top: none;
+    }
+
+    ul li ul {
+        left: -999em;
+        z-index: 998;
+        background-color: lighten($secondaryColor, 10%);
+        position: absolute;
+        width: 12em;
+    }
+
+    ul li ul li {
+        float: none;
+        border: none;
+    }
+
+    ul li:hover ul {
+        left: auto;
+        margin-left: 0;
+    }
+}
+
+// Main -----------------------------------------------------------------------
+
+main {
+    max-width: 64rem;
+    margin: 0 auto;
+    form {
+        padding: $gutter;
+        fieldset {
+            margin: 2rem 1rem;
+            border: 1px solid #445ba9;
+            border-radius: 10px;
+            padding: 0.5rem 2%;
+        }
+
+        legend {
+            color: #445ba9;
+            margin: 0 1rem;
+            padding: 0 0.5rem;
+        }
+
+        .top,
+        div {
+            display: block;
+            padding: 1rem 0;
+            color: #9c2c13;
+            font-size: 0.8rem;
+        }
+
+        .top input,
+        .top select {
+            display: block;
+            font-size: 1rem;
+            border: solid 1px #999;
+            border-radius: 4px;
+            padding: 0.75rem;
+            color: #555;
+            width: 100%;
+            max-width: 20rem;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .submitBtn {
+            border: none;
+
+            color: #fff;
+            border-radius: 1rem;
+            padding: 0.75rem 1.5rem;
+            margin: 0 0 2rem 2%;
+            width: 96%;
+            max-width: 20rem;
+        }
+
+        .top input:required {
+            border-left: red solid 6px;
+        }
+
+        .top input:required:valid {
+            border-left: green solid 6px;
+        }
+
+        .required {
+            color: red;
+        }
+    }
+
+    .form-radio,
+    .sbs {
+        display: block;
+        color: #555;
+        padding: 0.75rem 0;
+    }
+}

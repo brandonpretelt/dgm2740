@@ -1,0 +1,65 @@
+// Header ---------------------------------------------------------------------
+
+.headerWrapper {
+    background-color: $primaryColor;
+    width: 100%;
+}
+
+.logo {
+    margin-top: $gutter / 1.5;
+}
+// Nav ------------------------------------------------------------------------
+
+.navWrapper {
+    background-color: $primaryColor;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+nav {
+    max-width: 75rem;
+    margin: 0 auto;
+    background-color: $primaryColor;
+
+    ul li {
+        width: auto;
+        border-bottom: none;
+    }
+    ul li:first-child {
+        border-left: solid 1px rgba(0, 0, 0, 0.3);
+    }
+
+    ul li:last-child {
+        border-right: solid 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+// Main -----------------------------------------------------------------------
+
+.llgallery {
+    margin: 0 auto;
+    display: block;
+}
+
+/* *** Column Layout *** */
+.row {
+    clear: both;
+}
+
+.column {
+    padding: 0 $gutter;
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .large-#{$i} {
+        width: $w;
+        float: left;
+    }
+}
+
+// Footer ---------------------------------------------------------------------
+
+.footerWrapper {
+    background-color: $primaryColor;
+    width: 100%;
+}

@@ -1,0 +1,150 @@
+<article class="main-content">
+        
+        <div class="test">
+                <p>lorempixel Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel maiores repudiandae perspiciatis ipsum repellendus porro necessitatibus sequi? Iste harum doloremque consequatur quas, id voluptatem quia assumenda necessitatibus, quod, eveniet illum!</p>
+        </div>
+
+        <div class="test">
+                <p>lorempixel Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel maiores repudiandae perspiciatis ipsum repellendus porro necessitatibus sequi? Iste harum doloremque consequatur quas, id voluptatem quia assumenda necessitatibus, quod, eveniet illum!</p>
+        </div>
+        <div class="test">
+                <p>lorempixel Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel maiores repudiandae perspiciatis ipsum repellendus porro necessitatibus sequi? Iste harum doloremque consequatur quas, id voluptatem quia assumenda necessitatibus, quod, eveniet illum!</p>
+        </div>
+        <div class="test">
+                <p>lorempixel Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel maiores repudiandae perspiciatis ipsum repellendus porro necessitatibus sequi? Iste harum doloremque consequatur quas, id voluptatem quia assumenda necessitatibus, quod, eveniet illum!</p>
+        </div>
+
+    </article>
+
+    <div class="photo-gallery">
+        <figure><img src="images/a.jpg" alt=""></figure>
+        <figure><img src="images/b.jpg" alt=""></figure>
+        <figure><img src="images/c.jpg" alt=""></figure>
+        <figure><img src="images/d.jpg" alt=""></figure>
+        <figure><img src="images/e.jpg" alt=""></figure>
+        <figure><img src="images/f.jpg" alt=""></figure>
+        <figure><img src="images/g.jpg" alt=""></figure>
+        <figure><img src="images/h.jpg" alt=""></figure>
+        <figure><img src="images/i.jpg" alt=""></figure>
+        <figure><img src="images/j.jpg" alt=""></figure>
+        <figure><img src="images/k.jpg" alt=""></figure>
+        <figure><img src="images/l.jpg" alt=""></figure>
+        <figure><img src="images/m.jpg" alt=""></figure>
+        <figure><img src="images/n.jpg" alt=""></figure>
+        <figure><img src="images/o.jpg" alt=""></figure>
+        <figure><img src="images/p.jpg" alt=""></figure>
+    </div>
+
+    <div class="parent">
+        <article>
+            <h2>News Story</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quisquam totam sed ipsam esse deleniti, similique doloribus quibusdam quo praesentium a voluptatem repudiandae nam autem nemo sapiente laudantium fugit non! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae dolorem laudantium, laborum autem esse a, suscipit inventore accusamus voluptate odit. Magni minima dignissimos enim est facilis sequi fugiat quo.
+        </article>
+        <article>
+            <h2>News Story</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde blanditiis cupiditate ipsa suscipit facilis est tempora laudantium sapiente repudiandae quasi velit, asperiores fuga placeat omnis eos quos ipsum quam?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos neque enim cum ea pariatur, nam saepe esse modi. Repudiandae cumque amet earum, ea odio voluptatibus perferendis cupiditate voluptate accusantium hic.
+        </article>
+        <article>
+            <h2>News Story</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id sed laudantium accusantium odit odio voluptate sunt vero. Ab vel praesentium necessitatibus, accusantium consequuntur magnam ipsum sint a inventore nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam illo voluptate, laborum id, nostrum odio quos libero suscipit nam dolor odit temporibus nesciunt quae velit nemo ut commodi magni?
+        </article>
+        <article>
+            <h2>News Story</h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus consequatur obcaecati laudantium porro iste dolorem earum repudiandae nihil in asperiores. Voluptate, tempora? Harum, molestiae enim placeat nulla laudantium nam ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia mollitia in, obcaecati tenetur voluptatibus molestias odio asperiores voluptatem fuga, quaerat consequatur. Est eligendi inventore laudantium labore? Illum, quo neque.
+        </article>
+        <article>
+            <h2>News Story</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur omnis alias eos earum quasi, qui, similique numquam mollitia vero nesciunt repellendus eum. Debitis animi eos excepturi aspernatur, illum dignissimos at? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, officia velit architecto, eligendi odit mollitia alias aliquid beatae neque deserunt repellat fuga assumenda ullam maxime error praesentium facere illo veritatis.
+        </article>
+        <article>
+            <h2>News Story</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis illum officia adipisci dolorem voluptates officiis cum fugit nulla animi excepturi blanditiis asperiores laboriosam, eligendi illo praesentium veritatis qu. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae corporis veritatis cupiditate, at sint debitis amet molestiae delectus quo soluta! Quaerat temporibus cum unde accusantium officia distinctio incidunt voluptates tempore?
+        </article>
+        <article>
+            <h2>News Story</h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam labore, omnis ad obcaecati veritatis quisquam at. Sapiente quam, recusandae doloribus libero odit repudiandae at, possimus voluptatum perspiciatis ea ipsa itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ullam facilis similique eos animi, eius iste sunt tempora id cum repudiandae sequi fugiat voluptas corporis aut assumenda doloribus blanditiis velit!
+        </article>
+        <article>
+            <h2>News Story</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, iure nam perferendis pariatur reprehenderit sunt quisquam sequi officiis consequatur, cum cumque obcaecati fugit tempore vero minima ipsam explicabo dolores? Nam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt maxime dignissimos incidunt repellendus ex at nesciunt possimus sequi similique sint alias, vel nulla quo totam, soluta quas labore. Mollitia, minus!
+        </article>
+    </div> 
+
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .main-content .test {
+        flex-basis: 100%;
+        padding: 1rem $gutter;
+    }
+
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .photo-gallery figure {
+        flex-basis: 50%;
+        padding: 1rem $gutter;
+        transition: transform 0.3s ease-in-out;
+
+        img {
+            width: 100%;
+        }
+    }
+    .photo-gallery figure:hover {
+        transform: scale(1.05);
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2%;
+        grid-row-gap: 0.5rem;
+        article:nth-child(1) {
+            grid-column: 1 / span 2;
+        }
+    }
+
+        .main-content .test {
+        flex-basis: 50%;
+    }
+
+    .photo-gallery figure {
+        flex-basis: 33.33%;
+    }
+
+    .parent {
+        grid-template-columns: 1fr 1fr 1fr;
+        article:nth-child(1) {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 2;
+        }
+    }
+    
+
+        /*.main-content .test {
+        flex-basis: 33.33%;
+    }
+
+    .photo-gallery figure {
+        flex-basis: 25%;
+    }*/
+
+    /*.parent {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        article:nth-child(1) {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+        article:nth-child(2) {
+            grid-column: 3 / span 2;
+        }
+    } */
+

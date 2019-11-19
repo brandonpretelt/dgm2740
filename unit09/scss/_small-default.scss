@@ -1,9 +1,8 @@
-// Default styling ------------------------------------------------------------
+/* Default Styling ------------------------------------------------------------- */
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -11,97 +10,117 @@ html {
 }
 
 body {
-    font-family: $fontFamily;
-    background-color: #eaeaea;
-    margin: 0 auto;
+    font-family: $mainFontFamily;
+    background-color: #efefef;
 }
 
-// Clearfix -------------------------------------------------------------------
+img {
+    max-width: 100%;
+}
+.myslider {
+    /* margin: 0 auto;*/
+    padding: $gutter;
+}
+/*.myslider img {
+    width: 400px;
+}*/
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
-// Header ---------------------------------------------------------------------
+main,
+nav,
+header,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+}
+nav {
+    background-color: darken($secondaryColor, 40%);
+}
+
+/**** --- Header --- ***/
 header {
-    max-width: 100%;
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #000;
-
     h1,
     h2 {
         margin: $gutter;
         padding: $gutter;
         color: #fff;
     }
-
     h1 {
-        font-size: 2rem;
+        font-size: $mainHeading;
     }
-
     h2 {
-        font-size: $heading2;
+        font-size: $subHeading;
     }
 }
 
-// Nav ------------------------------------------------------------------------
-
-.hamburger {
-    display: block;
-    width: 7rem;
-    height: 2.75rem;
-    background-repeat: no-repeat;
-    background-position: 2vw center;
-}
-
-.hamburgerOpen {
-    @extend .hamburger;
-    background-image: url(../images/menuOpenWhite.png);
-}
-
-.hamburgerClose {
-    @extend .hamburger;
-    background-image: url(../images/menuCloseWhite.png);
-}
-
-.smallNavBar {
-    background-color: $menuColor;
-}
+/**** --- Nav ---- ***/
 
 nav {
-    height: 100vh;
-    width: 100%;
-    background-color: $menuColor;
-    max-width: 64rem;
+    /*background-color: darken($secondaryColor, 40%) !important;*/
+    font-family: $mainFontFamily;
+    /*ul {
+        position: absolute;
+        z-index: 1;
+    }*/
+    ul li {
+        float: left;
+        /*background-color: darken($secondaryColor, 40%) !important;*/
+        width: 100%;
+        border-top: solid 1px rgba(0, 0, 0, 0.3);
+    }
+
+    ul li:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
     ul li a {
+        text-align: center;
+        padding: 0.5rem 1rem;
         display: block;
         color: #fff;
         text-decoration: none;
-        width: 100%;
-        padding: 0.6rem 2%;
-        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+        font-size: 1.1rem;
+        transition: background 0.75s ease, color 0.75s ease;
     }
-    ul li ul li a {
-        padding-left: 8%;
-    }
+
     ul li.active a {
-        background-color: $menuColor;
+        background-color: darken($secondaryColor, 10%);
+        color: #fff;
+    }
+
+    ul li a:hover {
+        color: #eaeaea;
+        background-color: darken($secondaryColor, 10%);
     }
 }
 
-// Main -----------------------------------------------------------------------
+.closed {
+    display: none;
+}
+.navbtnWrapper {
+    background-color: $primaryColor;
+}
+.menu-btn {
+    background-color: $primaryColor;
+    border: none;
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* Main ------------------------------------------------------------- */
 main {
-    max-width: 64rem;
-
-    .myslider div {
-        width: 100%;
-        img {
-            width: 100%;
-        }
-    }
-
+    max-width: 60rem;
+    background-color: $secondaryColor;
+    overflow-x: hidden;
     .coolTrick {
         display: block;
         float: left;
@@ -115,10 +134,6 @@ main {
         opacity: 0.1;
     }
 
-    .addMarginBottom {
-        margin-bottom: $gutter;
-    }
-
     .icon {
         position: absolute;
         top: 100px;
@@ -126,6 +141,7 @@ main {
         width: 100%;
         text-align: center;
     }
+
     .text {
         position: absolute;
         top: 215px;
@@ -133,6 +149,18 @@ main {
         text-align: center;
         color: #fff;
         font-size: 1.3rem;
+    }
+
+    span {
+        position: absolute;
+        display: block;
+        bottom: 15px;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        padding: 0.3rem;
+        margin-left: 20px;
+        color: #fff;
+        font-size: 1.1rem;
     }
 
     .photograph {
@@ -149,15 +177,24 @@ main {
         transition: opacity 0.5s;
     }
 
+    .addMarginBottom {
+        margin-bottom: $gutter;
+    }
+
     section h2 {
-        font-size: $heading2;
+        font-size: $subHeading;
+        padding: $gutter;
+        color: #fff;
     }
 }
-// Footer ---------------------------------------------------------------------
+
+/* Footer ------------------------------------------------------------- */
+
 footer {
+    padding: $gutter;
     clear: both;
+    background-color: darken($secondaryColor, 40%);
     text-align: center;
-    background-color: $primaryColor;
     p {
         color: #fff;
         padding: 0.5rem $gutter;

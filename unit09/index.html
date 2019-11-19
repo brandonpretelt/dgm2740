@@ -15,125 +15,165 @@
     <![endif]-->
     <!--<link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
 
 </head>
 
 <body id="top">
-    <div class="smallNavBar"><a class="hamburgerOpen" href="#footerLinks"></a></div>
     <div class="headerWrapper">
         <header>
             <h1>Boston City</h1>
             <h2>Where History Comes Alive</h2>
         </header>
     </div>
+    <div class="navbtnWrapper">
+        <button id="menuOpen" class="menu-btn">&#9776;</button>
+    </div>
+    <div class="navWrapper">
+        <nav class="clearfix">
+            <ul class="closed">
+                <li class="active"><a href="#">Visit</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Pay Bills</a></li>
+                <li><a href="">Meetings</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
+    <div class="mainWrapper">
+        <main class="clearfix">
+            <div class="myslider">
+                <figure>
+                    <picture>
+                        <source srcset="images/boston_1h.jpg" media="(min-width: 29.25rem)">
+                        <img srcset="images/boston_1s.jpg" alt="slider" src="images/boston_1s.jpg">
+                    </picture>
+                    <span>Hotel Clarendon</span>
+                </figure>
 
-    <main>
-        <div class="myslider">
-            <picture>
-                <source srcset="images/boston_1h.jpg" media="(min-width: 29.25rem)">
-                <img srcset="images/boston_1s.jpg" alt="slider" src="images/boston_1s.jpg">
-            </picture>
+                <figure>
 
-            <picture>
-                <source srcset="images/boston-massacre-site_2h.jpg" media="(min-width: 29.25rem)">
-                <img srcset="images/boston-massacre-site_2s.jpg" alt="slider" src="images/boston-massacre-site_2s.jpg">
-            </picture>
+                    <picture>
+                        <source srcset="images/boston-massacre-site_2h.jpg" media="(min-width: 29.25rem)">
+                        <img srcset="images/boston-massacre-site_2s.jpg" alt="slider"
+                            src="images/boston-massacre-site_2s.jpg">
 
-            <picture>
-                <source srcset="images/boston_3h.jpg" media="(min-width: 29.25rem)">
-                <img srcset="images/boston_3s.jpg" alt="slider" src="images/boston_3s.jpg">
-            </picture>
+                    </picture>
+                    <span>Site of the Boston Massacre</span>
+                </figure>
 
-            <picture>
-                <source srcset="images/boston_4h.jpg" media="(min-width: 29.25rem)">
-                <img srcset="images/boston_4s.jpg" alt="slider" src="images/boston_4s.jpg">
-            </picture>
+                <figure>
 
-            <picture>
-                <source srcset="images/boston_5h.jpg" media="(min-width: 29.25rem)">
-                <img srcset="images/boston_5s.jpg" alt="slider" src="images/boston_5s.jpg">
-            </picture>
-        </div>
+                    <picture>
+                        <source srcset="images/boston_3h.jpg" media="(min-width: 29.25rem)">
+                        <img srcset="images/boston_3s.jpg" alt="slider" src="images/boston_3s.jpg">
 
-        <section>
-            <h2>Plan Your Visit</h2>
-            <div>
-                <!-- Icon goes here-->
-                <a class="coolTrick" href="#">
-                    <div class="coverColor"></div>
-                    <div class="icon"><img src="images/hotel.png" alt=""></div>
-                    <div class="text">Places To Visit</div>
-                    <img class="photograph lazy" src="images/boston_6.jpg" alt="">
-                </a>
+                    </picture>
+                    <span>Library</span>
+                </figure>
+
+                <figure>
+
+                    <picture>
+                        <source srcset="images/boston_4h.jpg" media="(min-width: 29.25rem)">
+                        <img srcset="images/boston_4s.jpg" alt="slider" src="images/boston_4s.jpg">
+
+                    </picture>
+                    <span>Freedom Trail</span>
+                </figure>
+
+                <figure>
+                    <picture>
+                        <source srcset="images/boston_5h.jpg" media="(min-width: 29.25rem)">
+                        <img srcset="images/boston_5s.jpg" class="make-small" alt="slider" src="images/boston_5s.jpg">
+
+                    </picture>
+                    <span>Fenway Park</span>
+                </figure>
             </div>
 
-            <div>
-                <!-- Icon goes here-->
-                <a class="coolTrick" href="#">
-                    <div class="coverColor"></div>
-                    <div class="icon"><img src="images/hotel.png" alt=""></div>
-                    <div class="text">Places To Visit</div>
-                    <img class="photograph lazy" src="images/boston_7.jpg" alt="">
-                </a>
-            </div>
+            <section>
+                <h2>Plan Your Visit</h2>
+                <div>
+                    <!-- Icon goes here-->
+                    <a class="coolTrick" href="#">
+                        <div class="coverColor"></div>
+                        <div class="icon"><img src="images/hotel.png" alt=""></div>
+                        <div class="text">Places To Visit</div>
+                        <img class="photograph lazy" src="images/boston_6.jpg" alt="">
+                    </a>
+                </div>
 
-            <div>
-                <!-- Icon goes here-->
-                <a class="coolTrick" href="#">
-                    <div class="coverColor"></div>
-                    <div class="icon"><img src="images/pass.png" alt="pass"></div>
-                    <div class="text">Pass to The City</div>
-                    <img class="photograph lazy" src="images/pass_c.jpg" alt="">
-                </a>
-            </div>
+                <div>
+                    <!-- Icon goes here-->
+                    <a class="coolTrick" href="#">
+                        <div class="coverColor"></div>
+                        <div class="icon"><img src="images/hotel.png" alt=""></div>
+                        <div class="text">Walk The Red Line</div>
+                        <img class="photograph lazy" src="images/boston_7.jpg" alt="">
+                    </a>
+                </div>
 
-            <div>
-                <!-- Icon goes here-->
-                <a class="coolTrick" href="#">
-                    <div class="coverColor"></div>
-                    <div class="icon"><img src="images/restaurant.png" alt=""></div>
-                    <div class="text">Fine Dining</div>
-                    <img class="photograph lazy" src="images/boston_9.jpg" alt="">
-                </a>
-            </div>
+                <div>
+                    <!-- Icon goes here-->
+                    <a class="coolTrick" href="#">
+                        <div class="coverColor"></div>
+                        <div class="icon"><img src="images/pass.png" alt="pass"></div>
+                        <div class="text">Pass to The City</div>
+                        <img class="photograph lazy" src="images/pass_c.jpg" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <!-- Icon goes here-->
+                    <a class="coolTrick" href="#">
+                        <div class="coverColor"></div>
+                        <div class="icon"><img src="images/restaurant.png" alt=""></div>
+                        <div class="text">Fine Dining</div>
+                        <img class="photograph lazy" src="images/boston_9.jpg" alt="">
+                    </a>
+                </div>
 
 
 
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 
-    <div class="footerWrapper" style="width:100%; background-color: black">
+    <div class="footerWrapper">
 
 
         <footer class="clearfix">
             <p>&copy; 2019 &bullet; Company Name &bullet; Phone 1-800-555-1234 &bullet; <a href="#">Login</a></p>
-            <div class="navWrapper">
-                <nav id="footerLinks">
-                    <div><a href="#top" class="hamburgerClose"></a></div>
-                    <ul class="closed">
-                        <li class="active"><a href="#">Visit</a></li>
-                        <li><a href="#">Departments</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Pay Bills</a></li>
-                        <li><a href="">Meetings</a></li>
-                        <li><a href="">Help</a></li>
-                    </ul>
-                </nav>
-            </div>
+        </footer>
     </div>
 
-    </footer>
+
     <script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
         integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <!-- <script src="slick/slick.js"></script> -->
+
+    <script>
+        $(document).ready(function () {
+            $('.myslider').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false,
+                cssEase: 'ease-out',
+                speed: 2000,
+                autoplaySpeed: 10000
+            });
+        });
+    </script>
     <script src="js/index.js"></script>
 </body>
 
