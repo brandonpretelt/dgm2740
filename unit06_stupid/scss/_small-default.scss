@@ -1,0 +1,191 @@
+// Default styling ------------------------------------------------------------
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header,
+nav,
+main {
+    max-width: 75rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: $headingFont;
+}
+
+/*.image-wrapper {
+    width: 100%;
+    height: 0;
+    padding-bottom: 150%;
+}
+
+.image {
+    width: 100%;
+}*/
+
+// **** Header
+
+header {
+    h1,
+    h2 {
+        margin-top: $gutter;
+    }
+    h1 {
+        font-size: $mainHeading;
+    }
+    h2 {
+        font-size: $subHeading;
+    }
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .logo {
+        display: block;
+        float: left;
+        margin-right: $gutter * 2;
+    }
+    .float-right {
+        float: right;
+        padding: $gutter * 2;
+    }
+    .logo img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        clip-path: circle(50%);
+        margin: 5px;
+        max-width: 100%;
+    }
+    .social-icon-group {
+        a {
+            padding: 0.5rem;
+            font-size: 1.8rem;
+            color: #000;
+            cursor: pointer;
+        }
+
+        float: right;
+        padding: $gutter * 2;
+        margin: 0 auto;
+    }
+}
+
+// **** Navigation
+.navWrapper {
+    background-color: $primaryColor;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}
+nav {
+    max-width: 75rem;
+
+    ul li {
+        float: left;
+        width: 25%;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        color: #fff;
+        text-decoration: none;
+        transition: background 0.75s ease, color 0.75s ease;
+    }
+
+    .active {
+        background-color: darken($primaryColor, 10%);
+    }
+    ul a:hover {
+        background-color: darken($primaryColor, 10%);
+    }
+}
+
+//**** body main styles
+main {
+    margin: 0 auto;
+    background-color: $primaryColor;
+
+    .llgallery {
+        padding: $gutter;
+    }
+
+    p {
+        font-family: $copyFont;
+    }
+
+    section h2 {
+        padding: $gutter;
+        font-size: $subHeading;
+    }
+
+    .members {
+        border-radius: 5px;
+        margin: $gutter;
+        background-color: $secondaryColor;
+        padding: $gutter * 1.5;
+    }
+
+    .members h2 {
+        padding: $gutter;
+        padding-left: 0;
+    }
+
+    .members p {
+        line-height: 1.5;
+        padding: 1%;
+    }
+
+    .pfp img {
+        clip-path: circle(45%);
+        float: right;
+        padding-right: $gutter;
+        shape-outside: circle(50%);
+        margin: 0.5%;
+    }
+}
+
+//*** Footer
+
+footer {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+    background-color: $primaryColor;
+    p {
+        text-align: center;
+        padding: 0.75rem $gutter;
+        color: #efefef;
+        font-family: $copyFont;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+//*** Loops for creating columns
+.flexed {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .small-#{$i} {
+        width: $w;
+        float: left;
+    }
+}

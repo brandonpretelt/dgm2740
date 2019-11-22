@@ -1,0 +1,41 @@
+/* Nav ------------------------------------------------------------------------ */
+nav {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1%;
+    padding-bottom: 0;
+    /*background-color: $primaryColor;*/
+    ul li {
+        width: auto;
+        border-bottom: none;
+        border-right: solid 1px rgba(0, 0, 0, 0.3);
+    }
+    ul li:first-child {
+        border-left: solid 1px rgba(0, 0, 0, 0.3);
+    }
+
+    ul li:last-child {
+        border-right: solid 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+nav input[type~="search"] {
+    float: right;
+    margin-right: $gutter;
+    margin-top: 0%;
+}
+
+/* Main ----------------------------------------------------------------------- */
+.faq {
+    padding: $gutter * 2;
+    margin-bottom: 20px;
+}
+/* *** Column Layout *** */
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .large-#{$i} {
+        width: $w;
+        float: left;
+    }
+}

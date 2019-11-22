@@ -1,0 +1,49 @@
+/* Nav ------------------------------------------------------------------------ */
+nav {
+    ul li {
+        width: 33%;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}
+
+nav ul.closed {
+    display: block;
+}
+
+nav button {
+    display: none;
+}
+/* Main ----------------------------------------------------------------------- */
+
+/* *** Column Layout *** */
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 50%;
+    .medium-#{$i} {
+        flex-basis: $w;
+        /*width: $w;
+        float: left;*/
+    }
+}
+.column button {
+    margin: $gutter 0;
+    padding: $gutter * 2;
+}
+
+.btn > button {
+    width: 100%;
+}
+
+.tip-of-day,
+.faq {
+    display: block !important;
+    background-color: $secondaryColor;
+    color: #fff;
+    padding: $gutter;
+    margin: $gutter ($gutter * 1);
+}
+
+.faq {
+    background: none;
+    color: #000;
+}

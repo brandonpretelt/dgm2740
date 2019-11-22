@@ -1,0 +1,56 @@
+// Header --------------------------------------------------------------------
+header {
+  margin: 0;
+}
+
+.headerWrapper {
+  width: 100%;
+  background-color: $menuColor;
+}
+
+// Nav ----------------------------------------------------------------------
+nav {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 64rem;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.navWrapper {
+  margin: 0 auto;
+  display: block;
+  background-color: $menuColor;
+}
+
+// Main -----------------------------------------------------------------------
+main {
+  margin: 0 auto;
+  width: 64rem;
+    .myslider {
+    margin: 0;
+    margin-top: ($gutter * 2);
+  }
+
+  .coolTrick {
+    width: 19%;
+    margin: 2.56%;
+  }
+
+  .icon {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    width: 100%;
+    text-align: center;
+  }
+  .text {
+    position: absolute;
+    top: 115px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+}

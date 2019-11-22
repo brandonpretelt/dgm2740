@@ -1,44 +1,40 @@
 {
     "folders": [
         {
-            "name": "unit05",
-            "path": "unit05"
+            "name": "unit06",
+            "path": "unit06"
         },
         {
-            "name": "unit04",
-            "path": "unit04"
+            "name": "unit15",
+            "path": "unit15"
         },
         {
-            "name": "unit08",
-            "path": "unit08"
+            "name": "unit12",
+            "path": "unit12"
         },
         {
-            "name": "unit03",
-            "path": "unit03"
+            "name": "home",
+            "path": "home"
         },
         {
-            "name": "unit02",
-            "path": "unit02"
+            "name": "unit11",
+            "path": "unit11"
         },
         {
-            "name": "unit01",
-            "path": "unit01"
-        },
-        {
-            "name": "css-grid",
-            "path": "/Users/brandonpretelt/Documents/Projects/css-grid"
-        },
-        {
-            "name": "brandonpreteltwebsite",
-            "path": "/Users/brandonpretelt/Documents/Projects/brandonpreteltwebsite"
+            "name": "unit10",
+            "path": "unit10"
         },
         {
             "name": "unit09",
             "path": "unit09"
+        },
+        {
+            "name": "unit08",
+            "path": "unit08"
         }
     ],
     "settings": {
-        "liveServer.settings.multiRootWorkspaceName": "unit05",
+        "liveServer.settings.multiRootWorkspaceName": "unit15",
         "liveServer.settings.port": 5501
     }
 }

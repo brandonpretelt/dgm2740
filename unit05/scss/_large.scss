@@ -11,7 +11,10 @@ main {
 }
 
 figure.founderImg {
-    width: 750px !important;
+    max-width: 50vw;
+    width: 750px;
+    padding: $gutter;
+    margin: 0 auto;
 }
 
 .heroImage {

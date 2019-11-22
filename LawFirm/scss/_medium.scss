@@ -1,0 +1,21 @@
+/* *** Column Layout *** */
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .medium-#{$i} {
+        width: $w;
+        float: left;
+    }
+}
+.column button {
+    margin: $gutter 0;
+    padding: $gutter * 2;
+}
+
+nav ul.closed {
+    display: block;
+}
+
+nav button {
+    display: none;
+}

@@ -1,0 +1,198 @@
+// Default styling ------------------------------------------------------------
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: $copyFontFamily;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+h1,
+h2,
+h3 {
+    font-family: $headingFontFamily;
+}
+
+// Clearfix -------------------------------------------------------------------
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+// Nav ------------------------------------------------------------------------
+.navWrapper {
+    background-color: $primaryColor !important;
+    width: 100%;
+}
+
+nav {
+    background-color: $primaryColor !important;
+    border-top: solid 1px white;
+
+    .icon {
+        padding: 0 $gutter * 2 0 $gutter;
+    }
+
+    ul li {
+        float: left;
+        width: 33%;
+        border-right: solid 1px #fff;
+    }
+    ul li:last-child {
+        border-right: none;
+    }
+    ul li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-family: $copyFontFamily;
+        width: 100%;
+        padding: 0.6rem $gutter;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+    }
+    .active {
+        background-color: lighten($primaryColor, 10%);
+    }
+}
+
+// Header ---------------------------------------------------------------------
+.headerWrapper {
+    background-color: #fff;
+    border-bottom: solid 1px rgba(0, 0, 0, 1);
+}
+
+header {
+    display: grid;
+    padding: $gutter;
+
+    img {
+        justify-self: center;
+    }
+}
+
+// Main ------------------------------------------------------------------------
+.mainWrapper {
+    background-color: #fff;
+}
+.info-barWrapper {
+    width: 100%;
+    background-color: #000;
+}
+
+main {
+    .info-bar {
+        padding: $gutter;
+        text-align: center;
+        p {
+            text-align: left;
+            padding: $gutter;
+        }
+        ul {
+            text-align: left;
+            padding: $gutter;
+        }
+        ul li {
+            padding: $gutter;
+            transform: translateX(30px);
+            list-style: disc;
+        }
+        h2 {
+            font-size: $subHeading;
+            color: $primaryHeadingColor;
+        }
+        .success {
+            font-style: italic;
+        }
+    }
+    .our-cards,
+    .pricing,
+    .card,
+    .our-tech {
+        padding: $gutter;
+    }
+    .pricing {
+        p {
+            color: #fff;
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: $gutter auto;
+            outline: none;
+            border: none;
+            padding: 1rem;
+            color: #fff;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            background-color: $coolBlue;
+            cursor: pointer;
+        }
+    }
+    .info-bar,
+    .card,
+    .pricing {
+        line-height: 1.5;
+    }
+    .card {
+        border-radius: 10px;
+        background-color: $primaryColor;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+        h2,
+        p {
+            padding: $gutter;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            padding: $gutter;
+            margin: 0 auto;
+        }
+        figure {
+            img {
+                border-radius: 20px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .clients {
+        display: flex;
+        flex-basis: 16.67%;
+        padding: $gutter;
+        .clients-list {
+            margin-left: $gutter;
+        }
+    }
+}
+// Footer -----------------------------------------------------------------------
+.footerWrapper {
+    /*grid-area: footer;
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;*/
+    background-color: $secondaryColor;
+    border-top: solid 1px rgba(255, 255, 255, 0.3);
+}
+footer {
+    padding: $gutter;
+    p {
+        font-family: $copyFontFamily;
+        color: darken(#fff, 10%);
+        text-align: center;
+    }
+}

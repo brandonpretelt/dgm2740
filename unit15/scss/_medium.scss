@@ -1,0 +1,55 @@
+/*body {
+    grid-template-areas: "header header" "nav content" "footer footer";
+    grid-template-columns: 1fr 1fr;
+    background-color: $secondaryColor;
+}*/
+// Nav ------------------------------------------------------------------------
+.navWrapper {
+    background-color: $secondaryColor;
+}
+
+.hide {
+    display: none;
+}
+
+nav {
+    ul li {
+        transition: background 0.5s ease-in-out;
+    }
+    li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-family: $copyFontFamily;
+        width: 100%;
+        padding: 0.6rem $gutter;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+    }
+    .active,
+    ul li:hover {
+        background-color: lighten($primaryColor, 10%);
+    }
+}
+// Main ------------------------------------------------------------------------
+.mainWrapper {
+    width: 100vw;
+}
+main {
+    .info-bar:first-child {
+        float: left;
+        width: 60%;
+    }
+    .info-bar:nth-child(2) {
+        float: right;
+        width: 40%;
+    }
+    .our-cards .card,
+    .our-tech .card {
+        float: left;
+        width: 46%;
+        padding: $gutter;
+        margin: $gutter;
+    }
+}
+// Footer ------------------------------------------------------------------------

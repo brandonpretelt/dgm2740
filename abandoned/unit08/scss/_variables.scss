@@ -1,0 +1,8 @@
+$gutter: 2%;
+$heading1: 2rem;
+$heading2: 1.7rem;
+
+@mixin gradient($startColor, $endColor) {
+    background: #000;
+    background: linear-gradient(to bottom, $startColor 0%, $endColor 100%);
+}

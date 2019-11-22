@@ -1,0 +1,57 @@
+body {
+    grid-template-areas: "header header" "nav content" "footer footer";
+    grid-template-columns: 1fr 1fr;
+    background-color: $secondaryColor;
+}
+// Nav ------------------------------------------------------------------------
+.navWrapper {
+    grid-area: nav;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    background-color: $secondaryColor;
+    height: auto;
+    width: 20vw;
+}
+
+.hide {
+    display: none;
+}
+
+nav {
+    ul li {
+        transition: background 0.5s ease-in-out;
+    }
+    li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-family: $copyFontFamily;
+        width: 100%;
+        padding: 0.6rem $gutter;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+    }
+    .active,
+    ul li:hover {
+        background-color: lighten($primaryColor, 10%);
+    }
+}
+// Main ------------------------------------------------------------------------
+.mainWrapper {
+    width: 80vw;
+}
+main {
+    /*display: block !important;
+    article {
+        display: block;
+    }*/
+    .float {
+        float: right;
+        width: 50%;
+        padding: $gutter;
+    }
+    .left {
+        float: left;
+    }
+}
+// Footer ------------------------------------------------------------------------

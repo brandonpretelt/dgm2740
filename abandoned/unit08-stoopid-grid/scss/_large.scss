@@ -1,0 +1,30 @@
+/*** Header ------------------------------------------------------------------- ***/
+
+/*** Nav----------------------------------------------------------------------- ***/
+
+/*** Main---------------------------------------------------------------------- ***/
+/*** Footer ---------------------------------------------------------------------- ***/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    color: #333;
+    h3 {
+        font-size: 1.2rem;
+    }
+    ul li {
+        list-style: none;
+    }
+    ul li a {
+        text-decoration: none;
+    }
+    .main-section,
+    .shows-section {
+        grid-column: auto;
+    }
+    .tools-section,
+    .personalities-section {
+        grid-column: auto;
+    }
+}

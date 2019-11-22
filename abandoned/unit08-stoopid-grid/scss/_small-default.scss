@@ -1,0 +1,114 @@
+// Default styling ------------------------------------------------------------
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*** Header ------------------------------------------------------------------- ***/
+
+/*** Navigation ---------------------------------------------------------------- ***/
+
+/*** Main ---------------------------------------------------------------------- ***/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "main main"
+        "footer footer";
+    /*column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    padding: 2%;*/
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    background-color: red;
+    min-height: 300px;
+    /*max-width: 80rem;*/
+    grid-template-columns: 1fr 1fr;
+    grid-column: 10px 10px;
+}
+
+.teaser {
+    position: relative;
+}
+
+.teaser img {
+    display: block;
+    width: 100%;
+}
+
+span {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 0.3rem $gutter;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.lead {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.secondTop {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+.secondBottom {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+/*** Footer ------------------------------------------------------------------- ***/
+footer {
+    grid-area: footer;
+    justify-self: center;
+    align-self: center;
+    p {
+        text-align: center;
+        padding: 2%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul li a {
+        text-decoration: none;
+    }
+
+    .main-section,
+    .tools-section {
+        padding: 2%;
+    }
+
+    .shows-section,
+    .personalities-section {
+        display: none;
+    }
+}
+
+// Clearfix -------------------------------------------------------------------
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

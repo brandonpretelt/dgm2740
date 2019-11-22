@@ -131,14 +131,18 @@ main {
         .heroImg {
             margin: 0 auto;
         }
-        .founderImg {
+        // .founderImg {
+        //     float: right;
+        //     padding: 2%;
+        // }
+        /*.founderImg {
             margin: 0 auto;
             padding: $gutter;
             display: block;
-            width: 300px;
-        }
+        }*/
 
         .founderImg img {
+            width: 100%;
             max-width: 100%;
         }
     }

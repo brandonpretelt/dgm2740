@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"name": "brandonpreteltwebsite",
+			"path": "/Users/brandonpretelt/Documents/Projects/brandonpreteltwebsite"
+		},
+		{
+			"name": "dgm1240",
+			"path": "/Users/brandonpretelt/Documents/Projects/dgm1240"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "unit08",
+        "liveServer.settings.port": 5501
+    }
+}

@@ -1,0 +1,276 @@
+/* Default Styling ------------------------------------------------------------- */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mainFontFamily;
+    background-color: #efefef;
+}
+/* Clearfix ------------------------------------------------------------------- */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Nav ------------------------------------------------------------------------ */
+
+nav input[type~="search"] {
+    float: right;
+    margin: $gutter;
+}
+
+nav {
+    background-color: lighten(black, 10%);
+    font-family: $mainFontFamily;
+    max-width: 75rem;
+}
+
+.closed {
+    display: none;
+}
+
+nav button {
+    background-color: $primaryColor;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+ul li {
+    float: left;
+    width: 100%;
+    /*border-right: 1px solid rgba(0, 0, 0, 0.3);*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+ul li a {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.75s ease, color 0.75s ease;
+}
+
+ul li.active a {
+    background-color: darken($secondaryColor, 10%);
+}
+
+ul li a:hover {
+    color: #eaeaea;
+    background-color: lighten($secondaryColor, 10%);
+}
+
+/* Header --------------------------------------------------------------------- */
+header {
+    max-width: 75rem;
+    margin: 0 auto;
+    background-color: $primaryColor;
+    padding: $gutter;
+
+    h1,
+    h2 {
+        text-align: center;
+        padding: $gutter;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: $mainHeading;
+    }
+
+    h2 {
+        font-size: $subHeading;
+    }
+}
+/* Main ----------------------------------------------------------------------- */
+
+main {
+    max-width: 75rem;
+    margin: 0 auto;
+
+    .btn {
+        float: none;
+        margin: 0 auto;
+    }
+
+    button {
+        width: 100%;
+        font-family: $mainFontFamily;
+        background-color: $secondaryColor;
+        color: #fdfdfd;
+        font-size: 1.3rem;
+        border: none;
+        padding: $gutter;
+        margin: $gutter;
+        cursor: pointer;
+        transition: background 0.75s ease, color 0.75s ease;
+    }
+
+    button:hover {
+        color: #eaeaea;
+        background-color: lighten($secondaryColor, 10%);
+    }
+
+    article {
+        max-width: 60rem;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 125%;
+        }
+    }
+
+    .blog-post {
+        background-color: $secondaryColor;
+        margin: $gutter;
+        padding: $gutter * 2;
+    }
+
+    .blog-post h2 {
+        margin: 20px 0;
+    }
+
+    .blog-post h2,
+    .blog-post p {
+        color: darken(#fff, 15%);
+    }
+
+    .lawyer-card {
+        background-color: black;
+        padding: 8%;
+        margin: $gutter;
+    }
+
+    .lawyer-card span {
+        display: block;
+        background-color: $secondaryColor;
+        padding: $gutter * 2;
+        /*border-radius: 20px; */
+        width: 75%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .lawyer-card > span,
+    .lawyer-card > h2 {
+        color: white;
+    }
+
+    .lawyer-card h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .lawyer-card a {
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    .lawyer-card a:hover {
+        font-style: italic;
+    }
+
+    .tip-of-day,
+    .faq {
+        display: none;
+    }
+}
+
+.pfp img {
+    clip-path: circle(50%);
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    display: inline-block;
+}
+
+/* *** Column Layout *** */
+.row {
+    clear: both;
+    margin: 0 auto;
+}
+
+.column {
+    padding: 0 $gutter;
+}
+
+.flexed {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .small-#{$i} {
+        width: $w;
+        float: left;
+    }
+}
+
+/*@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .small-#{$i} {
+        flex-basis: $w;
+    }
+}*/
+
+.small-btn-#{$i} {
+    width: $w;
+    float: none;
+    margin: 0 auto;
+}
+
+/* Footer --------------------------------------------------------------------- */
+footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: $secondaryColor;
+    padding: $gutter;
+
+    .social-icons-group a {
+        padding: $gutter;
+        font-size: 1.8rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .social-icons-group .social {
+        display: block;
+        margin: 0 auto;
+    }
+    .social li {
+        list-style-type: none;
+        float: left;
+    }
+
+    .social li a {
+        font-size: 1.8rem;
+        padding: 0.5rem;
+        color: black;
+    }
+
+    .social li a:hover {
+        color: white;
+    }
+}
