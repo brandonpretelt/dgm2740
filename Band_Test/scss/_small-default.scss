@@ -19,6 +19,18 @@ img {
     max-width: 100%;
 }
 
+.image-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    padding-bottom: 23%;
+    height: auto;
+}
+
 // Clearfix -------------------------------------------------------------------
 .clearfix:after {
     content: "";
@@ -151,25 +163,25 @@ main {
     }
 }
 
-.llgallery img {
+/* .llgallery img {
     width: 100%;
     margin: 10px auto;
     display: block;
-}
+} */
 
 .performances h2 {
     padding-top: $gutter;
 }
 
 /* *** Column Layout *** */
-.row {
+/*.row {
     clear: both;
     margin: 0 auto;
 }
 
 .column {
     padding: 0 $gutter;
-}
+} */
 
 @for $i from 1 through 12 {
     $w: ($i / 12) * 100%;

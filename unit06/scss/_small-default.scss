@@ -1,0 +1,200 @@
+// Default styling ------------------------------------------------------------
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    font-family: $mainFontFamily;
+}
+
+img {
+    max-width: 100%;
+}
+
+// Clearfix -------------------------------------------------------------------
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// Header ---------------------------------------------------------------------
+
+.headerWrapper {
+    border-bottom: $borderStuff;
+}
+header {
+    max-width: 75rem;
+    background-color: $primaryColor;
+    margin: 0 auto;
+
+    h1,
+    h2 {
+        text-align: left;
+        color: #fff;
+        padding: $gutter * 2.5;
+        font-family: $mainFontFamily;
+    }
+
+    h1 {
+        font-size: $mainHeading;
+        padding-bottom: 0%;
+    }
+
+    h2 {
+        padding-top: 0%;
+        font-size: $subHeading;
+    }
+
+    .logo {
+        float: left;
+        margin-right: $gutter * 2;
+    }
+
+    .logo img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        clip-path: circle(50%);
+        margin: 5px;
+    }
+
+    .social-icon-group {
+        a {
+            padding: 0.5rem;
+            font-size: 1.8rem;
+            color: #fff;
+            cursor: pointer;
+        }
+        float: right;
+        margin: 0 auto;
+    }
+}
+
+// Nav ------------------------------------------------------------------------
+
+nav {
+    background-color: $primaryColor;
+    font-family: $mainFontFamily;
+
+    ul li {
+        float: left;
+        width: 25%;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    ul li a {
+        text-align: center;
+        padding: 0.5rem 1rem;
+        display: block;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #eaeaea;
+        transition: background 0.75s ease, color 0.75s ease;
+    }
+
+    ul li.active a {
+        background-color: lighten($primaryColor, 10%);
+    }
+
+    ul li a:hover {
+        color: #eaeaea;
+        background-color: darken($primaryColor, 10%);
+    }
+}
+
+// Main -----------------------------------------------------------------------
+
+main {
+    max-width: 75rem;
+    margin: 0 auto;
+
+    .pfp img {
+        clip-path: circle(50%);
+        float: right;
+        shape-outside: circle(50%);
+        margin: 0.5%;
+    }
+
+    article h2 {
+        margin: $gutter;
+    }
+
+    h2 {
+        font-size: $subHeading;
+        font-family: $mainFontFamily;
+    }
+
+    .members {
+        margin: $gutter;
+        background-color: $secondaryColor;
+        padding: $gutter * 2;
+        color: #333;
+    }
+
+    .members h2 {
+        /*padding: $gutter * 2*/
+        padding-left: 0;
+    }
+
+    .members p {
+        line-height: 125%;
+    }
+}
+
+.llgallery img {
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+}
+
+.performances h2 {
+    padding-top: $gutter;
+}
+
+/* *** Column Layout *** */
+.row {
+    clear: both;
+    margin: 0 auto;
+}
+
+.column {
+    padding: 0 $gutter;
+}
+
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .small-#{$i} {
+        width: $w;
+        float: left;
+    }
+}
+
+// Footer ---------------------------------------------------------------------
+
+.footerWrapper {
+    width: 100%;
+    background-color: $primaryColor;
+}
+
+footer {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: $gutter;
+    color: #fff;
+    p {
+        text-align: center;
+    }
+    a {
+        color: #fff;
+    }
+}

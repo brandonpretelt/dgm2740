@@ -1,16 +1,20 @@
 {
     "folders": [
         {
-            "name": "unit06",
-            "path": "unit06"
-        },
-        {
             "name": "unit15",
             "path": "unit15"
         },
         {
             "name": "unit12",
             "path": "unit12"
+        },
+        {
+            "name": "Band_Test",
+            "path": "Band_Test"
+        },
+        {
+            "name": "unit06",
+            "path": "unit06"
         },
         {
             "name": "home",

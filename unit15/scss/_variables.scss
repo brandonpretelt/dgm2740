@@ -17,3 +17,22 @@ $coolBlue: #0480b1;
 $coolBlack: #111118;
 $coolDarkBlue: #013e62;
 $coolSilver: #a8a8b2;
+
+@mixin gradient($startColor, $endColor) {
+    background: #333333; /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        $startColor 0%,
+        $endColor 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+        top,
+        $startColor 0%,
+        $endColor 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        $startColor 0%,
+        $endColor 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
