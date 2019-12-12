@@ -1,40 +1,12 @@
 {
     "folders": [
         {
-            "name": "unit15",
-            "path": "unit15"
-        },
-        {
             "name": "unit12",
             "path": "unit12"
         },
         {
-            "name": "Band_Test",
-            "path": "Band_Test"
-        },
-        {
-            "name": "unit06",
-            "path": "unit06"
-        },
-        {
             "name": "home",
             "path": "home"
-        },
-        {
-            "name": "unit11",
-            "path": "unit11"
-        },
-        {
-            "name": "unit10",
-            "path": "unit10"
-        },
-        {
-            "name": "unit09",
-            "path": "unit09"
-        },
-        {
-            "name": "unit08",
-            "path": "unit08"
         }
     ],
     "settings": {
